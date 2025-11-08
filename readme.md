@@ -30,7 +30,7 @@ cc main.c libft.a
 - [] strrchr
 - [] strncmp
 - [x] memchr
-- [] memcmp
+- [x] memcmp
 - [] strnstr
 - [] ato
 
