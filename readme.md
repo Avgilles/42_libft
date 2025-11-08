@@ -19,7 +19,7 @@ cc main.c libft.a
 - [x] isprint    
 - [x] strlen
 - [x] memset
-- [] bzero
+- [x] bzero
 - [x] memcpy
 - [x] memmove
 - [] strlcpy
