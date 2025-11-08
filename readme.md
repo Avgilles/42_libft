@@ -1,4 +1,16 @@
-# TODO :
+# Testing
+
+Use in the terminal :
+
+```
+make
+```
+
+```
+cc main.c libft.a
+```
+
+## TODO :
 
 - [x] isalpha
 - [x] isdigit
