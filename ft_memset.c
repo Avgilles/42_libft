@@ -1,25 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gavraam <gavraam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/08 13:45:32 by gavraam           #+#    #+#             */
-/*   Updated: 2025/11/08 17:01:43 by gavraam          ###   ########.fr       */
+/*   Created: 2025/11/08 16:47:22 by gavraam           #+#    #+#             */
+/*   Updated: 2025/11/08 17:03:17 by gavraam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+void	*ft_memset(void *s, int value, unsigned int n)
+{
+	unsigned char	*src;
+	unsigned int	i;
 
-int		ft_isalpha(char c);
-int		ft_isdigit(char c);
-int		ft_isalnum(char c);
-int		ft_strlen(char *str);
-int		ft_isdigit(char c);
-int		ft_isprint(char c);
-void	*ft_memcpy(void *dest, const void *src, unsigned int n);
-void	*ft_memmove(void *dest, const void *src, unsigned int n);
-void	*ft_memset(void *s, int value, unsigned int n);
-#endif
+	if (n <= 0 || !s)
+		return (0);
+	src = (unsigned char *)s;
+	i = 0;
+	while (i < n)
+	{
+		src[i] = (unsigned char)value;
+		i++;
+	}
+	return (s);
+}
+
+/*
+#include <stdio.h>
+#include <string.h>
+
+int	main(void)
+{
+	char	b1[100], b2[100];
+	printf("%d", memset(b1, 42, 100) == ft_memset(b2, 42, 100) ? 0 : 1);
+}
+*/
