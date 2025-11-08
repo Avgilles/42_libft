@@ -20,8 +20,8 @@ cc main.c libft.a
 - [x] strlen
 - [] memset
 - [] bzero
-- [] memcpy
-- [] memmove
+- [x] memcpy
+- [x] memmove
 - [] strlcpy
 - [] strlcat
 - [] toupper

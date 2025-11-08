@@ -1,31 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gavraam <gavraam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/08 15:19:51 by gavraam           #+#    #+#             */
-/*   Updated: 2025/11/08 16:42:45 by gavraam          ###   ########.fr       */
+/*   Created: 2025/11/08 15:27:43 by gavraam           #+#    #+#             */
+/*   Updated: 2025/11/08 16:42:24 by gavraam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memcpy(void *dest, const void *src, unsigned int n)
-{
-	char			*s;
-	char			*d;
-	unsigned int	i;
+#include "libft.h"
 
-	d = (char *)dest;
+void	*ft_memmove(void *dest, const void *src, unsigned int n)
+{
+	char	*d;
+	char	*s;
+
 	s = (char *)src;
-	if (!dest && !src)
-		return (0);
-	i = 0;
-	while (i < n)
+	d = (char *)dest;
+	if (s < d)
 	{
-		d[i] = s[i];
-		i++;
+		while (n--)
+			d[n] = s[n];
 	}
+	else
+		ft_memcpy(dest, src, n);
 	return (dest);
 }
 
@@ -41,7 +41,7 @@ int	main(int argc, char **argv)
 	c = 'a';
 	if (argc > 1)
 	{
-		printf("%s", (char *)ft_memcpy((void *)dest, (const void *)argv[1], 6));
+		printf("%s", (char *)ft_memmove((void *)dest, (const void *)argv[1], argv[2]));
 	}
 }
 */
