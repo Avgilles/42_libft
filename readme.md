@@ -18,7 +18,7 @@ cc main.c libft.a
 - [] isascii
 - [x] isprint    
 - [x] strlen
-- [] memset
+- [x] memset
 - [] bzero
 - [x] memcpy
 - [x] memmove
@@ -29,7 +29,7 @@ cc main.c libft.a
 - [] strchr
 - [] strrchr
 - [] strncmp
-- [] memchr
+- [x] memchr
 - [] memcmp
 - [] strnstr
 - [] ato
