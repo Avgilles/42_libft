@@ -6,10 +6,9 @@
 /*   By: gavraam <gavraam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/08 17:10:40 by gavraam           #+#    #+#             */
-/*   Updated: 2025/11/08 17:51:33 by gavraam          ###   ########.fr       */
+/*   Updated: 2025/11/08 19:37:02 by gavraam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 void	*ft_memchr(const void *s, int c, unsigned int n)
 {

@@ -6,7 +6,7 @@
 /*   By: gavraam <gavraam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/08 17:28:40 by gavraam           #+#    #+#             */
-/*   Updated: 2025/11/08 18:00:38 by gavraam          ###   ########.fr       */
+/*   Updated: 2025/11/08 19:37:35 by gavraam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ int	ft_memcmp(const void *s1, const void *s2, unsigned int n)
 		return (0);
 	src1 = (unsigned char *) s1;
 	src2 = (unsigned char *) s2;
-
 	i = 0;
 	while (i < n)
 	{

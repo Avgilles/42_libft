@@ -6,7 +6,7 @@
 /*   By: gavraam <gavraam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/08 19:00:04 by gavraam           #+#    #+#             */
-/*   Updated: 2025/11/08 19:25:54 by gavraam          ###   ########.fr       */
+/*   Updated: 2025/11/08 19:36:32 by gavraam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,21 @@ void	*ft_calloc(unsigned int count, unsigned int size)
 		return (NULL);
 	return (ft_memset(array, 0, size * count));
 }
+
+/*
+int	main(void)
+{
+	int *arr1 = (int *)ft_calloc(5, sizeof(int));
+	if (arr1) {
+		int all_zero = 1;
+		for (int i = 0; i < 5; i++) {
+			if (arr1[i] != 0) {
+				all_zero = 0;
+				break;
+			}
+		}
+		printf("%s \n", all_zero ? "Good" : "Not Good");
+		free(arr1);
+	}
+}
+*/
