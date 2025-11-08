@@ -2,9 +2,9 @@
 
 - [x] isalpha
 - [x] isdigit
-- [] isalnum
+- [x] isalnum
 - [] isascii
-- [] isprint    
+- [x] isprint    
 - [x] strlen
 - [] memset
 - [] bzero

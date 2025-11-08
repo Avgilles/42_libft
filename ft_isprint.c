@@ -1,27 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_isprint.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gavraam <gavraam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/08 14:43:36 by gavraam           #+#    #+#             */
-/*   Updated: 2025/11/08 14:48:14 by gavraam          ###   ########.fr       */
+/*   Created: 2025/11/08 14:22:20 by gavraam           #+#    #+#             */
+/*   Updated: 2025/11/08 14:22:20 by gavraam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include "libft.h"
-
-int	main(int argc, str *argv)
+int	isprint(char c)
 {
-	int		test;
-	char	c;
-
-	(void)argc;
-	(void)argv;
-	c = 'a';
-	test = ft_isalnum(c);
-	printf("%c", c);
-	printf("%d", test);
+	if (!((c >= 0 && c <= 31)))
+	{
+		return (0);
+	}
+	return (1);
 }
