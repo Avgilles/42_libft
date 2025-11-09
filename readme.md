@@ -22,7 +22,7 @@ cc main.c libft.a
 - [x] bzero
 - [x] memcpy
 - [x] memmove
-- [] strlcpy
+- [x] strlcpy
 - [x] strlcat
 - [x] toupper
 - [x] tolower
