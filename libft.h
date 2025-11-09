@@ -6,7 +6,7 @@
 /*   By: gavraam <gavraam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/08 13:45:32 by gavraam           #+#    #+#             */
-/*   Updated: 2025/11/09 13:00:17 by gavraam          ###   ########.fr       */
+/*   Updated: 2025/11/09 15:41:22 by gavraam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ char	ft_tolower(char c);
 char	ft_toupper(char c);
 char	*ft_strcat(char *dest, const char *src);
 char	*ft_strchr(const char *s, int c);
+char	*ft_strnstr(const char *src, const char *find, size_t len);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strcpy(char *dest, char *src);
 void	ft_bzero(void *s, unsigned int n);

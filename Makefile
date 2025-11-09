@@ -17,6 +17,7 @@ SRCS = ./ft_isdigit.c \
 		./ft_toupper.c \
 		./ft_tolower.c \
 		./ft_strcat.c \
+		./ft_strnstr.c \
 		./ft_strchr.c \
 		./ft_strrchr.c \
 		./ft_strcpy.c \

@@ -7,7 +7,7 @@ make
 ```
 
 ```
-cc main.c libft.a
+cc main.c libft.a -lbsd
 ```
 
 ## TODO :
@@ -31,7 +31,7 @@ cc main.c libft.a
 - [x] strncmp
 - [x] memchr
 - [x] memcmp
-- [] strnstr
+- [x] strnstr
 - [x] atoi
 
 ## To implement the two following functions, you will use malloc()
