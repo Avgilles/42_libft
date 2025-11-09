@@ -32,7 +32,7 @@ cc main.c libft.a
 - [x] memchr
 - [x] memcmp
 - [] strnstr
-- [] ato
+- [x] atoi
 
 ## To implement the two following functions, you will use malloc()
 

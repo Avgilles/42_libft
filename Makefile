@@ -11,7 +11,8 @@ SRCS = ./ft_isdigit.c \
         ./ft_memcmp.c \
         ./ft_bzero.c \
         ./ft_calloc.c \
-		./ft_strdup.c
+		./ft_strdup.c \
+		./ft_atoi.c
 
 OBJS = $(SRCS:.c=.o)
 NAME=libft.a
