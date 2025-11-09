@@ -6,7 +6,7 @@
 /*   By: gavraam <gavraam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/09 10:57:23 by gavraam           #+#    #+#             */
-/*   Updated: 2025/11/09 11:05:11 by gavraam          ###   ########.fr       */
+/*   Updated: 2025/11/09 12:03:39 by gavraam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ char	*ft_strcat(char *dest, const char *src)
 	char	*ptr;
 
 	ptr = dest + ft_strlen(dest);
-
 	while (*src != '\0')
 	{
 		*ptr++ = *src++;
@@ -25,7 +24,6 @@ char	*ft_strcat(char *dest, const char *src)
 	*ptr = '\0';
 	return (dest);
 }
-
 
 /*
 int	main(void)
