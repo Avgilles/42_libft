@@ -6,7 +6,7 @@
 /*   By: gavraam <gavraam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/08 13:45:32 by gavraam           #+#    #+#             */
-/*   Updated: 2025/11/09 10:35:39 by gavraam          ###   ########.fr       */
+/*   Updated: 2025/11/09 10:37:52 by gavraam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ int		ft_isdigit(char c);
 int		ft_isprint(char c);
 int		ft_memcmp(const void *s1, const void *s2, unsigned int n);
 int		ft_atoi(char *str);
+int		ft_strncmp(char *s1, char *s2, unsigned int n);
 void	ft_bzero(void *s, unsigned int n);
 void	*ft_memcpy(void *dest, const void *src, unsigned int n);
 void	*ft_memmove(void *dest, const void *src, unsigned int n);
