@@ -6,42 +6,43 @@
 /*   By: gavraam <gavraam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/09 11:09:03 by gavraam           #+#    #+#             */
-/*   Updated: 2025/11/09 12:03:55 by gavraam          ###   ########.fr       */
+/*   Updated: 2025/11/09 12:18:13 by gavraam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+char	*ft_strchr(const char *s, int c)
+{
+	while (*s)
+	{
+		if (*s == (char)c)
+			return ((char *)s);
+		s++;
+	}
+	if ((char)c == '\0')
+		return ((char *)s);
+	return (NULL);
+}
+
+/*
 char	*ft_strchr(const char *string, int searchedChar)
 {
 	int	i;
 
 	i = 0;
+	if ((char)searchedChar == '\0')
+		return ((char *)&string[i]);
 	while (string[i] != '\0')
 	{
 		if (string[i] == (char)searchedChar)
 			return ((char *)&string[i]);
 		i++;
 	}
-	if ((char)searchedChar == '\0')
-		return ((char *)&string[i]);
 	return (NULL);
 }
-
+*/
 /*
-char	*ft_strchr(const char *s, int c)
-{
-    while (*s)
-    {
-        if (*s == (char)c)
-            return ((char *)s);
-        s++;
-    }
-    if ((char)c == '\0')
-        return ((char *)s);
-    return (NULL);
-}
-
 int main() {
 
 	char * source = "The C Language";
