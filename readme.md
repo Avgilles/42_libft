@@ -15,7 +15,7 @@ cc main.c libft.a -lbsd
 - [x] isalpha
 - [x] isdigit
 - [x] isalnum
-- [] isascii
+- [x] isascii
 - [x] isprint    
 - [x] strlen
 - [x] memset
