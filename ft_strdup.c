@@ -1,31 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gavraam <gavraam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/08 14:43:36 by gavraam           #+#    #+#             */
-/*   Updated: 2025/11/08 19:36:39 by gavraam          ###   ########.fr       */
+/*   Created: 2025/11/09 10:28:04 by gavraam           #+#    #+#             */
+/*   Updated: 2025/11/09 10:28:16 by gavraam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
-#include <string.h>
 
-// int	main(void)
-// {
-// 	int *arr1 = (int *)ft_calloc(5, sizeof(int));
-// 	if (arr1) {
-// 		int all_zero = 1;
-// 		for (int i = 0; i < 5; i++) {
-// 			if (arr1[i] != 0) {
-// 				all_zero = 0;
-// 				break;
-// 			}
-// 		}
-// 		printf("%s \n", all_zero ? "✓" : "✗");
-// 		free(arr1);
-// 	}
-// }
+char	*ft_strdup(char *src)
+{
+	int		i;
+	int		len;
+	char	*dup;
+
+	len = ft_strlen(src);
+	dup = malloc(sizeof(char) * (len + 1));
+	if (!dup)
+		return (NULL);
+	i = 0;
+	while (src[i] && i < len)
+	{
+		dup[i] = src[i];
+		++i;
+	}
+	dup[i] = '\0';
+	return (dup);
+}

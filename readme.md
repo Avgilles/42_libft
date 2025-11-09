@@ -37,4 +37,4 @@ cc main.c libft.a
 ## To implement the two following functions, you will use malloc()
 
 - [x] calloc 
-- [] strdup
+- [x] strdup
