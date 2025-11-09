@@ -26,7 +26,7 @@ cc main.c libft.a
 - [x] strlcat
 - [x] toupper
 - [x] tolower
-- [] strchr
+- [x] strchr
 - [] strrchr
 - [x] strncmp
 - [x] memchr
@@ -38,3 +38,8 @@ cc main.c libft.a
 
 - [x] calloc 
 - [x] strdup
+
+
+# Bonus for me
+
+- ft_strcpy
