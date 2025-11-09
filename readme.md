@@ -27,7 +27,7 @@ cc main.c libft.a
 - [x] toupper
 - [x] tolower
 - [x] strchr
-- [] strrchr
+- [x] strrchr
 - [x] strncmp
 - [x] memchr
 - [x] memcmp

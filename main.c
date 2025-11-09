@@ -6,7 +6,7 @@
 /*   By: gavraam <gavraam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/08 14:43:36 by gavraam           #+#    #+#             */
-/*   Updated: 2025/11/09 12:00:43 by gavraam          ###   ########.fr       */
+/*   Updated: 2025/11/09 12:35:17 by gavraam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,23 +14,10 @@
 #include <string.h>
 #include "libft.h"
 
+// int main(int argc, char **argv)
+// {
+// 	(void)argc;
+// 	printf("ft_strchr : %s\n", ft_strchr(argv[1], 'o'));
+// 	printf("strchr : %s\n", strchr(argv[1], 'o'));
+// }
 
-int main() {
-
-	char * source = "The C Language";
-	char * destination;
-	char * pointer;
-	int length = ft_strlen(source);
-	
-	destination = (char *) malloc( sizeof( char) * (length+1) );
-	ft_strcpy( destination, source );
-	while ((pointer = ft_strchr( destination, 'a' ))  != NULL ) {
-		*pointer = 'A';
-		pointer++;
-	}
-	printf( "Result : %s\n", destination );
-	
-	free( destination );
-	
-	return 0;
-}
