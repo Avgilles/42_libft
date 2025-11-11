@@ -6,7 +6,7 @@
 /*   By: gavraam <gavraam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/08 14:43:36 by gavraam           #+#    #+#             */
-/*   Updated: 2025/11/11 11:42:52 by gavraam          ###   ########.fr       */
+/*   Updated: 2025/11/11 12:15:15 by gavraam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,6 +73,39 @@ void	test_ft_substr()
 	free(expected);
 }
 
+void	test_ft_strchr()
+{
+	const char *s = "Hello, World!";
+	int c = 'W';
+
+	char *result = ft_strchr(s, c);
+	char *expected = strchr(s, c);
+
+	if (result == expected)
+		printf("ft_strchr test: Passed (got %s, expected %s)\n", result, expected);
+	else
+		printf("ft_strchr test: Failed (got %s, expected %s)\n", result, expected);
+}
+
+void	test_ft_join()
+{
+	char const *s1 = "Hello, ";
+	char const *s2 = "World!";
+	char *result = ft_strjoin(s1, s2);
+	char *expected = malloc(strlen(s1) + strlen(s2) + 1);
+	strcpy(expected, s1);
+	strcat(expected, s2);
+
+	if (strcmp(result, expected) == 0)
+		printf("ft_strjoin test: Passed (got %s, expected %s)\n", result, expected);
+	else
+		printf("ft_strjoin test: Failed (got %s, expected %s)\n", result, expected);
+
+	free(result);
+	free(expected);
+}
+
+
 int	main(void)
 {
 	printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
@@ -80,5 +113,7 @@ int	main(void)
 	test_ft_strncmp();
 	test_ft_calloc();
 	test_ft_substr();
+	test_ft_strchr();
+	test_ft_join();
 	return (0);
 }
