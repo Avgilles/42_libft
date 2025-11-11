@@ -6,7 +6,7 @@
 /*   By: gavraam <gavraam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/08 14:43:36 by gavraam           #+#    #+#             */
-/*   Updated: 2025/11/11 12:15:15 by gavraam          ###   ########.fr       */
+/*   Updated: 2025/11/11 13:36:37 by gavraam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,9 +92,7 @@ void	test_ft_join()
 	char const *s1 = "Hello, ";
 	char const *s2 = "World!";
 	char *result = ft_strjoin(s1, s2);
-	char *expected = malloc(strlen(s1) + strlen(s2) + 1);
-	strcpy(expected, s1);
-	strcat(expected, s2);
+	char *expected = "Hello, World!";
 
 	if (strcmp(result, expected) == 0)
 		printf("ft_strjoin test: Passed (got %s, expected %s)\n", result, expected);
@@ -102,7 +100,21 @@ void	test_ft_join()
 		printf("ft_strjoin test: Failed (got %s, expected %s)\n", result, expected);
 
 	free(result);
-	free(expected);
+}
+
+void	test_ft_strtrim()
+{
+	char const *s1 = "  Hello, World!  ";
+	char const *set = " ";
+	char *result = ft_strtrim(s1, set);
+	char *expected = "Hello, World!";
+
+	if (strcmp(result, expected) == 0)
+		printf("ft_strtrim test: Passed (got '%s', expected '%s')\n", result, expected);
+	else
+		printf("ft_strtrim test: Failed (got '%s', expected '%s')\n", result, expected);
+
+	free(result);
 }
 
 
@@ -115,5 +127,6 @@ int	main(void)
 	test_ft_substr();
 	test_ft_strchr();
 	test_ft_join();
+	test_ft_strtrim();
 	return (0);
 }
