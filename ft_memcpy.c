@@ -6,13 +6,14 @@
 /*   By: gavraam <gavraam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/08 15:19:51 by gavraam           #+#    #+#             */
-/*   Updated: 2025/11/08 19:21:47 by gavraam          ###   ########.fr       */
+/*   Updated: 2025/11/11 16:03:03 by gavraam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dest, const void *src, unsigned int n)
+inline __attribute__((always_inline))
+	void	*ft_memcpy(void *dest, const void *src, unsigned int n)
 {
 	char			*s;
 	char			*d;

@@ -6,14 +6,16 @@
 /*   By: gavraam <gavraam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/08 16:47:22 by gavraam           #+#    #+#             */
-/*   Updated: 2025/11/08 17:03:17 by gavraam          ###   ########.fr       */
+/*   Updated: 2025/11/11 15:59:42 by gavraam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memset(void *s, int value, unsigned int n)
+#include "libft.h"
+
+void	*ft_memset(void *s, int value, size_t n)
 {
 	unsigned char	*src;
-	unsigned int	i;
+	size_t	i;
 
 	if (n <= 0 || !s)
 		return (0);
