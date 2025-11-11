@@ -6,13 +6,13 @@
 /*   By: gavraam <gavraam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/08 19:00:04 by gavraam           #+#    #+#             */
-/*   Updated: 2025/11/08 19:36:32 by gavraam          ###   ########.fr       */
+/*   Updated: 2025/11/11 11:06:57 by gavraam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_calloc(unsigned int count, unsigned int size)
+void	*ft_calloc(size_t count, size_t size)
 {
 	void	*array;
 

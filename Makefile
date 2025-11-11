@@ -23,7 +23,8 @@ SRCS = ./ft_isdigit.c \
 		./ft_strchr.c \
 		./ft_strrchr.c \
 		./ft_strcpy.c \
-		./ft_strlcpy.c
+		./ft_strlcpy.c \
+		./ft_substr.c 
 
 OBJS = $(SRCS:.c=.o)
 NAME=libft.a
@@ -39,4 +40,8 @@ fclean: clean
 	rm -f $(NAME)
 re: fclean all
 
-.PHONY: all clean fclean re
+run: re
+	cc main.c libft.a -lbsd
+	./a.out
+
+.PHONY: all clean fclean re run

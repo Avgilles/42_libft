@@ -6,7 +6,7 @@
 /*   By: gavraam <gavraam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/09 15:27:00 by gavraam           #+#    #+#             */
-/*   Updated: 2025/11/09 15:49:46 by gavraam          ###   ########.fr       */
+/*   Updated: 2025/11/11 11:12:42 by gavraam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,6 @@ char	*ft_strnstr(const char *src, const char *find, size_t len)
 	}
 	return (NULL);
 }
-
 
 /*
 #include <bsd/string.h>
