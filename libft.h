@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: avgilles <avgilles@student.42.fr>          +#+  +:+       +#+        */
+/*   By: gavraam <gavraam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/08 13:45:32 by gavraam           #+#    #+#             */
-/*   Updated: 2025/11/14 22:51:13 by avgilles         ###   ########.fr       */
+/*   Updated: 2025/11/21 18:21:48 by gavraam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,6 @@ char	*ft_strcat(char *dest, const char *src);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strnstr(const char *src, const char *find, size_t len);
 char	*ft_strrchr(const char *s, int c);
-char	*ft_strcpy(char *dest, char *src);
 void	ft_bzero(void *s, unsigned int n);
 void	*ft_memchr(const void *s, int c, size_t n);
 void	*ft_memcpy(void *dest, const void *src, unsigned int n);
@@ -47,5 +46,5 @@ char	*ft_strdup(const char *src);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
-char    **ft_split(char const *s, char c);
+char	**ft_split(char const *s, char c);
 #endif

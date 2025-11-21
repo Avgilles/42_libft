@@ -45,7 +45,7 @@ cc main.c libft.a -lbsd
 - [x] ft_substr
 - [x] ft_strjoin
 - [x] ft_strtrim
-- [] ft_split
+- [x] ft_split
 - [] ft_itoa
 - [] ft_strmapi
 - [] ft_striteri
@@ -56,5 +56,3 @@ cc main.c libft.a -lbsd
 
 
 ## Bonus for me
-
-- ft_strcpy

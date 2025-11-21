@@ -6,7 +6,7 @@
 /*   By: gavraam <gavraam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/08 14:43:36 by gavraam           #+#    #+#             */
-/*   Updated: 2025/11/21 17:34:03 by gavraam          ###   ########.fr       */
+/*   Updated: 2025/11/21 18:20:06 by gavraam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -116,20 +116,33 @@
 // 	free(result);
 // }
 
-void	test_ft_split()
-{
-	char *s1 = "hello world !";
+// void	test_atoi(void)
+// {
+// 	// char	c[] = "1234";
+// 	char	c[] = "a 1234";
+// 	char	c2[] = "2147483647";
+// 	char	c3[] = "-2147483648";
+
+// 	// ft_strcat(*c1, c);
+// 	// printf("%s", c2);
+// 	printf("%d \n", ft_atoi(c));
+// 	printf("%d \n", ft_atoi(c2));
+// 	printf("%d \n", ft_atoi(c3));
+// }
+// void	test_ft_split()
+// {
+// 	char *s1 = "hello world !";
 
 
-	char **t = ft_split(s1, ' ');
-	printf("ft_split test:\n");
-	printf("Input string: '%s'\n", s1);
-	printf("Split result:\n");
-	for (int i = 0; t[i] != NULL; i++)
-	{
-		printf("  - '%s'\n", t[i]);
-	}
-}
+// 	char **t = ft_split(s1, ' ');
+// 	printf("ft_split test:\n");
+// 	printf("Input string: '%s'\n", s1);
+// 	printf("Split result:\n");
+// 	for (int i = 0; t[i] != NULL; i++)
+// 	{
+// 		printf("  - '%s'\n", t[i]);
+// 	}
+// }
 
 int	main(void)
 {
@@ -141,6 +154,7 @@ int	main(void)
 	// test_ft_strchr();
 	// test_ft_join();
 	// test_ft_strtrim();
-	test_ft_split();
+	test_atoi();
+	// test_ft_split();
 	return (0);
 }
