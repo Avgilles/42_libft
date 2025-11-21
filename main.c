@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: avgilles <avgilles@student.42.fr>          +#+  +:+       +#+        */
+/*   By: gavraam <gavraam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/08 14:43:36 by gavraam           #+#    #+#             */
-/*   Updated: 2025/11/14 22:51:04 by avgilles         ###   ########.fr       */
+/*   Updated: 2025/11/21 17:34:03 by gavraam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -122,14 +122,13 @@ void	test_ft_split()
 
 
 	char **t = ft_split(s1, ' ');
-	// int i = 0;
-	// while(t)
-	// {
-	// 	// printf("s", *t)
-	// 	t++;
-	// }
-	
-
+	printf("ft_split test:\n");
+	printf("Input string: '%s'\n", s1);
+	printf("Split result:\n");
+	for (int i = 0; t[i] != NULL; i++)
+	{
+		printf("  - '%s'\n", t[i]);
+	}
 }
 
 int	main(void)

@@ -3,34 +3,102 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: avgilles <avgilles@student.42.fr>          +#+  +:+       +#+        */
+/*   By: gavraam <gavraam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/08 11:45:05 by gavraam           #+#    #+#             */
-/*   Updated: 2025/11/14 22:51:51 by avgilles         ###   ########.fr       */
+/*   Updated: 2025/11/21 17:50:08 by gavraam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char **ft_split(char const *s, char c)
+
+static void	ft_free_tab(char **result, int count)
 {
+	int	i;
 
-    (void)s;
-    (void)c;
+	i = 0;
+	while (i < count)
+	{
+		free(result[i]);
+		i++;
+	}
+	free(result);
+}
 
-    // int i;
-    int len;
+static	char	*get_word(const char *s, char c)
+{
+	int		len;
+	char	*word;
+	int		i;
 
-    len = ft_strlen((char *)s);
-    char *ptr = ft_memchr(s, c, len);
-    printf("ptr: %s\n", ptr);
-    // i = 0;
-    // while(s[i])
-    // {
-    //     i++;
-        
-    // }
+	len = 0;
+	while (s[len] && s[len] != c)
+		len++;
+	word = malloc(sizeof(char) * (len + 1));
+	if (!word)
+		return (NULL);
+	i = 0;
+	while (i  < len)
+	{
+		word[i] = s[i];
+		i++;
+	}
+	word[i] = '\0';
+	return (word);
+}
 
-    return malloc(3 * sizeof(int));   
+int	count_word(const	char *str, char c)
+{
+	int		i;
+	int		count;
+	int		in_word;
 
+	i = 0;
+	count = 0;
+	in_word = 0;
+	while (str[i])
+	{
+		if (str[i] != c)
+		{
+			if (!in_word)
+			{
+				count++;
+				in_word = 1;
+			}
+		}
+		else
+			in_word = 0;
+		i++;
+	}
+	return (count);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	int		i;
+	char	**result;
+
+	if (!s)
+		return (NULL);
+	result = malloc(sizeof(char *) * (count_word(s, c) + 1));
+	if (!result)
+		return (NULL);
+	i = 0;
+	while (*s)
+	{
+		while (*s && *s == c)
+			s++;
+		if (*s)
+		{
+			result[i] = get_word(s, c);
+			if (!result[i])
+				return (ft_free_tab(result, i), NULL);
+			i++;
+			while (*s && *s != c)
+				s++;
+		}
+	}
+	result[i] = NULL;
+	return (result);
 }
