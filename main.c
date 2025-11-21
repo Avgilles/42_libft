@@ -6,7 +6,7 @@
 /*   By: gavraam <gavraam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/08 14:43:36 by gavraam           #+#    #+#             */
-/*   Updated: 2025/11/21 18:20:06 by gavraam          ###   ########.fr       */
+/*   Updated: 2025/11/21 18:58:30 by gavraam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -144,6 +144,10 @@
 // 	}
 // }
 
+void	test_ft_itoa()
+{
+}
+
 int	main(void)
 {
 	printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
@@ -154,7 +158,7 @@ int	main(void)
 	// test_ft_strchr();
 	// test_ft_join();
 	// test_ft_strtrim();
-	test_atoi();
+	// test_atoi();
 	// test_ft_split();
 	return (0);
 }
