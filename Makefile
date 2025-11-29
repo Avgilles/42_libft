@@ -22,12 +22,12 @@ SRCS = ./ft_isdigit.c \
 		./ft_strnstr.c \
 		./ft_strchr.c \
 		./ft_strrchr.c \
-		./ft_strcpy.c \
 		./ft_strlcpy.c \
 		./ft_substr.c \
 		./ft_strjoin.c \
 		./ft_strtrim.c \
-		./ft_split.c
+		./ft_split.c \
+		./ft_itoa.c 
 
 OBJS = $(SRCS:.c=.o)
 NAME=libft.a

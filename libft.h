@@ -6,7 +6,7 @@
 /*   By: gavraam <gavraam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/08 13:45:32 by gavraam           #+#    #+#             */
-/*   Updated: 2025/11/21 18:21:48 by gavraam          ###   ########.fr       */
+/*   Updated: 2025/11/29 13:32:15 by gavraam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int		ft_isprint(char c);
 int		ft_memcmp(const void *s1, const void *s2, unsigned int n);
 int		ft_atoi(char *str);
 int		ft_strncmp(char *s1, char *s2, unsigned int n);
-int		t_isascii(int c);
+int		ft_isascii(int c);
 size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 char	ft_tolower(char c);
 char	ft_toupper(char c);
@@ -46,5 +46,6 @@ char	*ft_strdup(const char *src);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
+char	*ft_itoa(int n);
 char	**ft_split(char const *s, char c);
 #endif

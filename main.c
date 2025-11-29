@@ -6,7 +6,7 @@
 /*   By: gavraam <gavraam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/08 14:43:36 by gavraam           #+#    #+#             */
-/*   Updated: 2025/11/21 18:58:30 by gavraam          ###   ########.fr       */
+/*   Updated: 2025/11/29 15:09:11 by gavraam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -146,6 +146,11 @@
 
 void	test_ft_itoa()
 {
+	printf("%s \n", ft_itoa(42));
+	printf("%s \n", ft_itoa(-42));
+	printf("%s \n", ft_itoa(INT_MAX));
+	printf("%s \n", ft_itoa(INT_MIN));
+
 }
 
 int	main(void)
@@ -160,5 +165,6 @@ int	main(void)
 	// test_ft_strtrim();
 	// test_atoi();
 	// test_ft_split();
+	// test_ft_itoa();
 	return (0);
 }

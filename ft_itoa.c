@@ -6,57 +6,55 @@
 /*   By: gavraam <gavraam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/21 18:34:47 by gavraam           #+#    #+#             */
-/*   Updated: 2025/11/21 18:57:28 by gavraam          ###   ########.fr       */
+/*   Updated: 2025/11/29 15:14:39 by gavraam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "libft.h"
+#include "libft.h"
 
+static int	ft_intlen(long nb)
+{
+	int	len;
 
-// void	ft_putnbr(int nb)
-// {
-// 	char	c;
-
-// 	if (nb == INT_MIN)
-// 	{
-// 		write(1, "-2147483648", 11);
-// 		return ;
-// 	}
-// 	if (nb < 0)
-// 	{
-// 		write(1, "-", 1);
-// 		nb = -nb;
-// 	}
-// 	if (nb >= 10)
-// 	{
-// 		ft_putnbr(nb / 10);
-// 	}
-// 	c = nb % 10 + '0';
-// 	write(1, &c, 1);
-// }
+	len = 0;
+	if (nb == 0)
+		len = 1;
+	if (nb < 0)
+		nb = -nb;
+	while (nb)
+	{
+		len++;
+		nb /= 10;
+	}
+	return (len);
+}
 
 char	*ft_itoa(int n)
 {
-	int		len_base;
-	int		i;
-	char	*str;
-	int		size;
-	int		sign;
+	int			size;
+	char		*str;
+	int			sign;
+	int			i;
+	int long	nb;
 
-	sign = 0;
-	str = malloc(sizeof(char) * (n) + 1);
+	nb = n;
+	sign = (nb < 0);
+	if (sign)
+		nb = -nb;
+	size = ft_intlen(nb) + sign;
+	str = malloc(sizeof(char) * (size) + 1);
 	if (!str)
 		return (NULL);
 	str[size] = '\0';
 	i = size -1;
-	while (i >= 0)
+	while (i >= sign)
 	{
-		str[i] = n % 10;
-		if (sign && i == 0)
-			str[0] = '-';
-		n = n / 10;
+		str[i] = '0' + nb % 10;
+		nb = nb / 10;
 		i--;
 	}
+	if (sign)
+		str[0] = '-';
 	return (str);
 }
 
