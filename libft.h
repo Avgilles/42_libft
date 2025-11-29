@@ -6,7 +6,7 @@
 /*   By: gavraam <gavraam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/08 13:45:32 by gavraam           #+#    #+#             */
-/*   Updated: 2025/11/29 17:59:35 by gavraam          ###   ########.fr       */
+/*   Updated: 2025/11/29 18:41:14 by gavraam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,10 @@ int		ft_atoi(char *str);
 int		ft_strncmp(char *s1, char *s2, unsigned int n);
 int		ft_isascii(int c);
 size_t	ft_strlen(const char *s);
+size_t	ft_strlcat(char *dest, const char *src, size_t size);
 size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 int		ft_toupper(int c);
-char	*ft_strcat(char *dest, const char *src);
+int		ft_tolower(int c);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strnstr(const char *src, const char *find, size_t len);
 char	*ft_strrchr(const char *s, int c);

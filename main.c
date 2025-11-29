@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   _main.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gavraam <gavraam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/08 14:43:36 by gavraam           #+#    #+#             */
-/*   Updated: 2025/11/29 17:42:42 by gavraam          ###   ########.fr       */
+/*   Updated: 2025/11/29 18:06:35 by gavraam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -194,9 +194,6 @@ void	test_ft_strmapi()
 	printf("%s", s2);
 }
 
-
-
-
 static void __striteri_offset(unsigned int index, char *c)
 {
     *c = *c + index;
@@ -228,6 +225,6 @@ int	main(void)
 	// test_ft_itoa();
 	// test_ft_strmapi();
 	// test_ft_striteri();
-	test_ft_strmapi();
+	// test_ft_strmapi();
 	return (0);
 }

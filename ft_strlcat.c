@@ -1,38 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gavraam <gavraam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/09 10:57:23 by gavraam           #+#    #+#             */
-/*   Updated: 2025/11/09 12:03:39 by gavraam          ###   ########.fr       */
+/*   Updated: 2025/11/29 18:36:32 by gavraam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcat(char *dest, const char *src)
+size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
-	char	*ptr;
+	size_t	dest_len;
+	size_t	src_len;
+	size_t	i;
 
-	ptr = dest + ft_strlen(dest);
-	while (*src != '\0')
+	dest_len = ft_strlen(dest);
+	src_len = ft_strlen(src);
+	if (size <= dest_len)
+		return (size + src_len);
+	i = 0;
+	while (src[i] != '\0' && (dest_len + i) < (size - 1))
 	{
-		*ptr++ = *src++;
+		dest[dest_len + i] = src[i];
+		i++;
 	}
-	*ptr = '\0';
-	return (dest);
+	dest[dest_len + i] = '\0';
+	return (dest_len + src_len);
 }
-
-/*
-int	main(void)
-{
-	char	c1[50] = "Hello, ";
-	char	c2[] = "World!";
-
-	ft_strcat(c1, c2);
-	printf("%s\n", c1);
-	return (0);
-}
-*/
