@@ -1,5 +1,5 @@
 CC=cc
-# CFLAGS=-Wall -Wextra -Werror -c -I ${HEADER_DIR}
+CFLAGS=-Wall -Wextra -Werror -c -I ${HEADER_DIR}
 SRCS = ./ft_isdigit.c \
         ./ft_isalpha.c \
         ./ft_isalnum.c \
