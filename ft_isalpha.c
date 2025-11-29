@@ -6,11 +6,11 @@
 /*   By: gavraam <gavraam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/08 11:45:05 by gavraam           #+#    #+#             */
-/*   Updated: 2025/11/08 14:14:47 by gavraam          ###   ########.fr       */
+/*   Updated: 2025/11/29 15:28:18 by gavraam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(char c)
+int	ft_isalpha(int c)
 {
 	if (!((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')))
 	{

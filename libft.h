@@ -6,7 +6,7 @@
 /*   By: gavraam <gavraam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/08 13:45:32 by gavraam           #+#    #+#             */
-/*   Updated: 2025/11/29 13:32:15 by gavraam          ###   ########.fr       */
+/*   Updated: 2025/11/29 15:34:05 by gavraam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,23 +19,21 @@
 # include <stdio.h>
 // # include <bsd/string.h>
 
-int		ft_isalpha(char c);
-int		ft_isdigit(char c);
-int		ft_isalnum(char c);
-int		ft_strlen(char *str);
-int		ft_isdigit(char c);
-int		ft_isprint(char c);
-int		ft_memcmp(const void *s1, const void *s2, unsigned int n);
+int		ft_isalpha(int c);
+int		ft_isdigit(int c);
+int		ft_isalnum(int c);
+int		ft_isprint(int c);
 int		ft_atoi(char *str);
 int		ft_strncmp(char *s1, char *s2, unsigned int n);
 int		ft_isascii(int c);
+size_t	ft_strlen(const char *s);
 size_t	ft_strlcpy(char *dest, const char *src, size_t size);
-char	ft_tolower(char c);
-char	ft_toupper(char c);
+int		ft_toupper(int c);
 char	*ft_strcat(char *dest, const char *src);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strnstr(const char *src, const char *find, size_t len);
 char	*ft_strrchr(const char *s, int c);
+int		ft_memcmp(const void *s1, const void *s2, unsigned int n);
 void	ft_bzero(void *s, unsigned int n);
 void	*ft_memchr(const void *s, int c, size_t n);
 void	*ft_memcpy(void *dest, const void *src, unsigned int n);
