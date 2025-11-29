@@ -6,12 +6,11 @@
 /*   By: gavraam <gavraam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/08 11:45:05 by gavraam           #+#    #+#             */
-/*   Updated: 2025/11/21 17:50:08 by gavraam          ###   ########.fr       */
+/*   Updated: 2025/11/29 15:41:01 by gavraam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 
 static void	ft_free_tab(char **result, int count)
 {
@@ -39,7 +38,7 @@ static	char	*get_word(const char *s, char c)
 	if (!word)
 		return (NULL);
 	i = 0;
-	while (i  < len)
+	while (i < len)
 	{
 		word[i] = s[i];
 		i++;

@@ -6,7 +6,7 @@
 /*   By: gavraam <gavraam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/08 14:43:36 by gavraam           #+#    #+#             */
-/*   Updated: 2025/11/29 15:09:11 by gavraam          ###   ########.fr       */
+/*   Updated: 2025/11/29 15:52:59 by gavraam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -153,12 +153,26 @@ void	test_ft_itoa()
 
 }
 
+void test_memset()
+{
+	char	b1[100], b2[100];
+	printf("%d", memset(b1, 42, 100) == ft_memset(b2, 42, 100) ? 0 : 1);
+
+
+	char b3[100];
+	
+	char *result = ft_memset(b3, 'X', 10);
+	printf("%s", result);
+
+}
+
 int	main(void)
 {
 	printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 	printf("---------Running tests for libft functions:----------\n");
 	// test_ft_strncmp();
 	// test_ft_calloc();
+	// test_memset();
 	// test_ft_substr();
 	// test_ft_strchr();
 	// test_ft_join();
