@@ -6,7 +6,7 @@
 /*   By: gavraam <gavraam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/08 14:43:36 by gavraam           #+#    #+#             */
-/*   Updated: 2025/11/29 16:09:59 by gavraam          ###   ########.fr       */
+/*   Updated: 2025/11/29 17:42:42 by gavraam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -178,6 +178,40 @@ void test_memset()
 
 }
 
+static	char	__strmapi_offset(unsigned int n, char c)
+{
+	return (c + n);
+}
+
+void	test_ft_strmapi()
+{
+	const char *s = "ABC";
+
+	// ft_strmapi(s, char (*f)(unsigned, int, char));
+	// ft_toupper
+	char *s2;
+	s2 = ft_strmapi(s, __strmapi_offset);
+	printf("%s", s2);
+}
+
+
+
+
+static void __striteri_offset(unsigned int index, char *c)
+{
+    *c = *c + index;
+}
+
+void	test_ft_striteri()
+{
+	char s[] = "ABC";
+	// char *s = "ABC";
+
+	ft_striteri(s, __striteri_offset);
+	printf("%s \n", s);
+
+}
+
 int	main(void)
 {
 	printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
@@ -192,5 +226,8 @@ int	main(void)
 	// test_atoi();
 	// test_ft_split();
 	// test_ft_itoa();
+	// test_ft_strmapi();
+	// test_ft_striteri();
+	test_ft_strmapi();
 	return (0);
 }

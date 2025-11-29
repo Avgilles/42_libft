@@ -6,7 +6,7 @@
 /*   By: gavraam <gavraam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/21 18:34:47 by gavraam           #+#    #+#             */
-/*   Updated: 2025/11/29 15:40:12 by gavraam          ###   ########.fr       */
+/*   Updated: 2025/11/29 17:31:33 by gavraam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ char	*ft_itoa(int n)
 	if (!str)
 		return (NULL);
 	str[size] = '\0';
-	i = size -1;
+	i = size - 1;
 	while (i >= sign)
 	{
 		str[i] = '0' + nb % 10;

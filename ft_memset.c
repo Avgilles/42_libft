@@ -6,7 +6,7 @@
 /*   By: gavraam <gavraam@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/08 16:47:22 by gavraam           #+#    #+#             */
-/*   Updated: 2025/11/29 15:52:25 by gavraam          ###   ########.fr       */
+/*   Updated: 2025/11/29 17:00:35 by gavraam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	*ft_memset(void *s, int value, size_t n)
 {
 	unsigned char	*src;
-	size_t	i;
+	size_t			i;
 
 	if (n <= 0 || !s)
 		return (s);
